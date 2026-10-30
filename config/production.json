@@ -1,0 +1,7 @@
+{
+  "db": {
+    "host": "orders-db",
+    "poolMax": 20
+  },
+  "jobs": {}
+}
