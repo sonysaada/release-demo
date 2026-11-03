@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.8.0
+
+- Logs are JSON, one line per event
+- `request_id` field in every request log line
+
 ## 1.7.0
 
 - orders-service moved from the legacy monorepo to its own repository; earlier history (up to v1.6.x) stays in the monorepo
