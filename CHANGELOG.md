@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.9.0
+
+- Pool connection acquire timeout reduced from 10 to 5 seconds: a request fails fast instead of hanging
+- Pool size unchanged (`max` 20)
+
 ## 1.8.0
 
 - Logs are JSON, one line per event
