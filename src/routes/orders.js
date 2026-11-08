@@ -10,7 +10,7 @@ router.get('/:id', async (req, res) => {
 router.post('/', async (req, res) => {
   const { items, discountPercent = 0 } = req.body;
   const subtotal = items.reduce((s, i) => s + i.price * i.qty, 0);
-  const total = Math.floor(subtotal * (100 - discountPercent) / 100);
+  const total = Math.round(subtotal * (100 - discountPercent)) / 100;
   const { rows } = await pool.query(
     'INSERT INTO orders (items, total, status) VALUES ($1, $2, $3) RETURNING id',
     [JSON.stringify(items), total, 'pending_payment'],

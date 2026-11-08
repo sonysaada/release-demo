@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.9.1
+
+- Fixed rounding of the discounted order total (cents were lost)
+
 ## 1.9.0
 
 - Pool connection acquire timeout reduced from 10 to 5 seconds: a request fails fast instead of hanging
