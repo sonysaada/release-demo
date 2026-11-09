@@ -1,6 +1,6 @@
 {
   "name": "orders-service",
-  "version": "1.9.1",
+  "version": "1.10.0",
   "private": true,
   "main": "src/server.js",
   "dependencies": {

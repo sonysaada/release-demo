@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.10.0
+
+- New background job `status-sync`: every minute reconciles `pending_payment` orders with the payment provider
+- 8 parallel workers, batches of up to 500 orders, each batch is processed in a single transaction
+- The job uses the shared orders-db connection pool
+
 ## 1.9.1
 
 - Fixed rounding of the discounted order total (cents were lost)

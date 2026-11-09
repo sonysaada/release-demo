@@ -3,5 +3,11 @@
     "host": "orders-db",
     "poolMax": 20
   },
-  "jobs": {}
+  "jobs": {
+    "statusSync": {
+      "enabled": true,
+      "intervalSeconds": 60,
+      "workers": 8
+    }
+  }
 }
